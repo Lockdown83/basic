@@ -25,3 +25,19 @@ if turtle.speed() > 5:
     print("The turtle is moving fast!")
 else:
     print("The turtle is moving slow.")
+    def draw_egg():
+        turtle.penup()  # Lift the pen to move without drawing
+        turtle.goto(-50, -50)  # Move to a starting position for the egg
+        turtle.pendown()  # Put the pen down to start drawing
+        turtle.color("white")  # Set the color for the egg
+        turtle.begin_fill()  # Start filling the shape
+        
+        # Draw the egg shape
+        turtle.left(45)  # Turn left to start the egg shape
+        turtle.circle(100, 90)  # Draw a quarter circle for the top of the egg
+        turtle.circle(50, 90)   # Draw a quarter circle for the bottom of the egg
+        turtle.left(90)  # Turn to close the shape
+        turtle.circle(50, 90)   # Draw another quarter circle for the bottom
+        turtle.circle(100, 90)  # Complete the egg shape
+        
+        turtle.end_fill()  # Fill the egg shape with color
