@@ -21,3 +21,7 @@ def draw_bacon():
 turtle.speed(1)  # Set the speed of drawing
 draw_bacon()     # Call the function to draw the bacon
 turtle.done()    # Finish the drawing
+if turtle.speed() > 5:
+    print("The turtle is moving fast!")
+else:
+    print("The turtle is moving slow.")
